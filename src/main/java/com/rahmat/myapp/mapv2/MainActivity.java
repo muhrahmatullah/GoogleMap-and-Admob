@@ -36,8 +36,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         // Load an ad into the AdMob banner view.
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
-                //.addTestDevice(getResources().getString(R.string.banner_ad_unit_id))
-                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice(getResources().getString(R.string.banner_ad_unit_id))
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
 
 
